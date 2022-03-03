@@ -35,9 +35,9 @@
         </div>
     </nav>
     <section id="hero" class="pt-5 pb-5">
-        <div class="container-lg">
+        <div class="container-lg my-4 mx-5">
             <div class="row">
-                <div class="col-4 hero-text pt-5">
+                <div class="col-lg-4 hero-text pt-5 ps-5">
                     <h1>Donations</h1>
                     <p class="hero-subheading">Help us reach our yearly goal.</p>
                     <p class="hero-blurb">The WasteShed is 75% self-supporting through sales, but we still depend on grants and donations from our friends to operate. Even a small amount can make a big difference for our ability to serve the community.</p>
@@ -46,8 +46,8 @@
                         <img src="../img/arrow-med-blue.svg">
                     </button>
                 </div>
-                <div class="col-8">
-                    <img src="https://via.placeholder.com/800x400">
+                <div class="col-lg-8 px-3">
+                    <img src="https://via.placeholder.com/800x400" id="hero-img">
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
     <section id="support" class="mt-5 mb-5">
         <div class="container-xl">
             <h2>Support WasteShed</h2>
-            <p class="support-subheading">Currently Accepting Material Donations by Appointments Only*</p>
+            <p class="subheading">Currently Accepting Material Donations by Appointments Only*</p>
             <div class="row g-4">
                 <div class="col-4">
                     <div class="card">
@@ -97,8 +97,7 @@
         </div>
     </section>
 
-
-    <section id="donations-accept" class="mt-5 mb-5">
+    <section id="accept" class="mt-5 mb-5">
         <div class="container-lg">
             <h2>Donations We Accept</h2>
             <div class="row">
@@ -197,61 +196,64 @@
     <section id="not-accept">
         <div class="container-lg">
         <h2>Donations We DO NOT Accept</h2>
-        <p>Items that are dirty or significantly damaged*</p>
-        <ul class="list-group">
-            <li class="list-group-item">Food or perishables</li>
-            <li class="list-group-item">Wine Corks</li>
-            <li class="list-group-item">Books (unless art/design related)</li>
-            <li class="list-group-item">Housewares/furniture/appliances/household linens</li>
-            <li class="list-group-item">Dishes</li>
-            <li class="list-group-item">Food containers</li>
-            <li class="list-group-item">Loose pieces of glass</li>
-            <li class="list-group-item">Broken picture frames (missing glass, backing, etc.)</li>
-            <li class="list-group-item">Broken glass/ceramics</li>
-            <li class="list-group-item">Computer hardware/software</li>
-            <li class="list-group-item">VHS tapes, cassette tapes, CDs, or their cases</li>
-            <li class="list-group-item">Printers or other electronics</li>
-            <li class="list-group-item">Hanging files, file folders or binders over 2" wide</li>
-            <li class="list-group-item">Toys</li>
-            <li class="list-group-item">Knick-knacks (figurines, ornaments, baskets)</li>
-            <li class="list-group-item">House paint</li>
-            <li class="list-group-item">Toxic or unidentifiable substances</li>
-            <li class="list-group-item">Junk mail</li>
-            <li class="list-group-item">Most magazines except vintage, National Geographic, and art magazines - please ask</li>
-            <li class="list-group-item">Paper towel/toilet paper rolls, egg cartons, styrofoam</li>
-            <li class="list-group-item">Architectural samples</li>
-            <li class="list-group-item">Fabric scraps under 1/2 yard (sorry no fabric samples, cut up clothing, household linens or unfinished sewing projects</li>
+        <p class="subheading">Items that are dirty or significantly damaged*</p>
+        <ul class="list-group d-flex flex-row flex-wrap pe-5">
+            <li class="list-group-item w-50">Food or perishables</li>
+            <li class="list-group-item w-50">Wine Corks</li>
+            <li class="list-group-item w-50">Books (unless art/design related)</li>
+            <li class="list-group-item w-50">Housewares/furniture/appliances/household linens</li>
+            <li class="list-group-item w-50">Dishes</li>
+            <li class="list-group-item w-50">Food containers</li>
+            <li class="list-group-item w-50">Loose pieces of glass</li>
+            <li class="list-group-item w-50">Broken picture frames (missing glass, backing, etc.)</li>
+            <li class="list-group-item w-50">Broken glass/ceramics</li>
+            <li class="list-group-item w-50">Computer hardware/software</li>
+            <li class="list-group-item w-50">VHS tapes, cassette tapes, CDs, or their cases</li>
+            <li class="list-group-item w-50">Printers or other electronics</li>
+            <li class="list-group-item w-50">Hanging files, file folders or binders over 2" wide</li>
+            <li class="list-group-item w-50">Toys</li>
+            <li class="list-group-item w-50">Knick-knacks (figurines, ornaments, baskets)</li>
+            <li class="list-group-item w-50">House paint</li>
+            <li class="list-group-item w-50">Toxic or unidentifiable substances</li>
+            <li class="list-group-item w-50">Junk mail</li>
+            <li class="list-group-item w-50">Architectural samples</li>
+            <li class="list-group-item w-50">Paper towel/toilet paper rolls, egg cartons, styrofoam</li>
+            <li class="list-group-item w-50">Most magazines except vintage, National Geographic, and art magazines - please ask</li>
+            <li class="list-group-item w-50">Fabric scraps under 1/2 yard (sorry no fabric samples, cut up clothing, household linens or unfinished sewing projects</li>
         </ul>
-        <p>We will happily provide suggestions for other places to take items that we cannot accept. We appreciate your contribution, and we hope you can find some useful and inspiring materials when you visit our store.</p>
+        <p class="disclaimer">We will happily provide suggestions for other places to take items that we cannot accept. We appreciate your contribution, and we hope you can find some useful and inspiring materials when you visit our store.</p>
         </div>
     </section>
 
     <footer id="footer">
         <div class="container-lg footer-content">
-                <div class="footer-credit">
+            <div class="row">
+                <div class="footer-credit col-7">
                     <img src="../img/shed-logo.png" class="footer-logo">
-                    <p>The WasteShed &copy; 2021</p>
+                    <p class="copyright">The WasteShed &copy; 2021</p>
                 </div>
-                <div class="contact">
+                <div class="contact col-5">
                     <div class="contact-social">
-                        <img src="../img/instagram-icon.svg">
-                        <img src="../img/twitter-icon.svg">
+                        <img src="../img/instagram-icon.svg" class="pe-3">
+                        <img src="../img/twitter-icon.svg" class="pe-3">
                         <img src="../img/facebook-icon.svg">
-                        <p>(773)666-5997</p>
+                        <p class="phone-number py-3">(773)666-5997</p>
                     </div>
-                    <div class="contact-location">
+                    <div class="contact-location pt-5 pb-5">
                         <div>
-                            <h6>Evanston</h6>
-                            <p><em>Open </em>11am - 6pm, <em>Closed </em>Sundays & Tuesdays</p>
-                            <p>1245 Hartrey Ave, Evanston IL 60202</p>
+                            <h6 class="city">Evanston</h6>
+                            <p class="mb-2"><em>Open </em>11am - 6pm, <em>Closed </em>Sundays & Tuesdays</p>
+                            <p class="street-address">1245 Hartrey Ave, Evanston IL 60202</p>
                         </div>
+                        <hr>
                         <div>
-                            <h6>Chicago</h6>
-                            <p><em>Open </em>11am - 6pm, <em>Closed </em>Mondays</p>
-                            <p>2842 W Chicago Ave, Chicago IL 60622</p>
+                            <h6 class="city">Chicago</h6>
+                            <p class="mb-2"><em>Open </em>11am - 6pm, <em>Closed </em>Mondays</p>
+                            <p class="street-address">2842 W Chicago Ave, Chicago IL 60622</p>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

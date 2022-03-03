@@ -14,6 +14,7 @@
 body {
      font-family: 'Red Hat Display', sans-serif;
 }
+/* navbar styles */
 nav {
     background-color: var(--light-grey);
 }
@@ -30,6 +31,7 @@ nav {
     text-decoration: underline;
     font-weight: 700;
 }
+
 /* hero styles */
 #hero {
     background-color: var(--light-grey);
@@ -40,7 +42,7 @@ h1 {
 }
 h2 {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .hero-subheading {
     font-size: 1.6rem;
@@ -55,8 +57,15 @@ h2 {
     text-transform: uppercase;
     font-size: .8rem;
 }
+#hero-img {
+    width: 100%;
+}
+
 /* support styles */
-.support-subheading {
+#support {
+    border: 1px solid red;
+}
+#support .subheading {
     color: var(--dark-grey);
     font-size: 1.5rem;
     font-weight: 700;
@@ -65,10 +74,11 @@ h2 {
     display: flex;
     align-items: center;
 }
-.card-heading h3 {
+#support .card-heading h3 {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 #support .card {
     border: none;
@@ -76,10 +86,46 @@ h2 {
 #support .card-text {
     color: var(--med-blue);
 }
+
 /* accept styles */
+#accept {
+    border: 1px solid blue;
+}
+#accept .card {
+    border: none;
+}
+#accept .card-text {
+    color: var(--med-blue);
+}
+#accept h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 /* not accept styles */
-
+#not-accept {
+    border: 1px solid green;
+}
+#not-accept .subheading {
+    color: var(--light-pink);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.list-group {
+    padding-left: 0;
+}
+.list-group-item {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+#not-accept .disclaimer {
+    color: var(--teal-green);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
 /* footer styles */
 footer {
     background-color: var(--light-blue);
@@ -87,15 +133,25 @@ footer {
 .footer-logo {
     width: 100px;
 }
-.footer-content {
+.footer-credit {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+}
+.copyright {
+    font-size: .85rem;
 }
 .contact {
-    border: 1px solid red;
     display: flex;
     align-items: center;
+    font-size: .85rem;
 }
 .contact-social {
     padding-right: 3rem;
+}
+.phone-number, .city {
+    font-weight: 700;
+}
+.street-address {
+    font-weight: 500;
 }
