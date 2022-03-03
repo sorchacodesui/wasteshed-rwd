@@ -4,16 +4,244 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--font Red Hat Display-->
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Donations</title>
 </head>
 <body>
-    <h1>Donations</h1>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xxl mt-4 mb-5">
+                <a href="../index.html"><img src="../img/wasteshed-logo.svg"></a>
+            <!-- toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Event</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Volunteer</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Webstore</a></li>
+                    <li class="nav-item pe-3"><a href="donations.html" class="nav-link active">Donate</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero" class="pt-5">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-4 hero-text">
+                    <h1>Donations</h1>
+                    <p class="hero-subheading">Help us reach our yearly goal.</p>
+                    <p class="hero-blurb">The WasteShed is 75% self-supporting through sales, but we still depend on grants and donations from our friends to operate. Even a small amount can make a big difference for our ability to serve the community.</p>
+                    <button class="btn hero-btn">
+                        <a href="#" class="pe-2">Click on this</a>
+                        <img src="../img/arrow-med-blue.svg">
+                    </button>
+                </div>
+                <div class="col-8">
+                    <img src="https://via.placeholder.com/800x400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="mt-3 mb-3">
+        <div class="container-xl">
+            <h2>Support WasteShed</h2>
+            <p>Currently Accepting Material Donations by Appointments Only</p>
+            <div class="row g-4">
+                <div class="col-4">
+                    <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/400x120" alt="Card image cap">
+                        <div class="card-body">
+                        <h3 class="card-title">Via Paypal</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/400x120" alt="Card image cap">
+                        <div class="card-body">
+                          <h3 class="card-title">Fulfill a Wishlist</h3>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/400x120" alt="Card image cap">
+                        <div class="card-body">
+                          <h3 class="card-title">Appointment</h3>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="donations-accept">
+        <div class="container-lg">
+            <h2>Donations We Accept</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Art Supplies</h3>
+                            <p class="card-text">Paint (except house paint), dyes, brushes, ink, hot glue guns, glue, art tools, stencils, pencils, pens, markers, pastels, charcoal, ceramic tools and glazes, pencil sharpeners, mineral spirits, cutting mats, moldmaking and casting materials.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Fabric & Notions</h3>
+                            <p class="card-text">Fabric yardage only (1/2 yard and larger), yarn and knitting needles, cords and laces, lace, elastic, zippers, bobbins, threads, buttons, sewing tools, embroidery hoops, ribbons, fasteners, leather, felt, patterns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Containers</h3>
+                            <p class="card-text">Mason jars, tins (non-holiday) plastic organizer boxes, Rubbermaid tubs, jewelry boxes, buckets, cigar boxes, film canisters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Craft Supplies</h3>
+                            <p class="card-text">Fake flowers, doll making supplies, candle wax, soap/candy molds, pipe cleaners, googley eyes, pom-poms, craft foam, marbles, pins, board games/puzzles, beads, jewelry, magnets, corks, masks and small costume elements, seashells.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Office Supplies</h3>
+                            <p class="card-text">Post-its, thumbtacks, staples, paperclips, writing utensils, scissors, hole-punches, staplers, tape dispensers, transparencies, sheet protectors, labels, envelopes, tape, notebooks, clipboards, and select 3-ring binders (1.5" or less, please email to see if we can accept them).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Party/Gift Supplies</h3>
+                            <p class="card-text">Tissue paper, greeting cards (unused), party decorations, ribbons, bows, rolls of gift-wrap, gift-bags, bubble wrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Paper</h3>
+                            <p class="card-text">Copy paper, rolls of paper, construction paper, cardstick, art paper and pads, origami paper, posters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Framing/Signage</h3>
+                            <p class="card-text">Foam core, poster board, mat board, modern or fancy picture frames, old signs, plexiglass, silkscreens, vinyl lettering, hanging hardware, canvases (painted or new), easels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Architecture/Interior Design</h3>
+                            <p class="card-text">Wallpaper, mosaic tiles (specifically for mosaics, not leftover household tile), paint swatches, mirrors, shelf brackets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Collage/Scrapbooking Images</h3>
+                            <p class="card-text">Stickers, scrapbook paper, rubber stamps and stamp pads, calendars, playing cards, postcards, National Geographics, select other magazines (please ask for details), maps, old photos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Metal/Hardware</h3>
+                            <p class="card-text">Wire, keys, nails, screws, bottlecaps, drafting lamps, light kits, X-acto knives, most smaller tools, working lightbulbs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="not-accept">
+        <div class="container-lg">
+        <h2>Donations We DO NOT Accept</h2>
+        <p>Items that are dirty or significantly damaged*</p>
+        <ul class="list-group">
+            <li class="list-group-item">Food or perishables</li>
+            <li class="list-group-item">Wine Corks</li>
+            <li class="list-group-item">Books (unless art/design related)</li>
+            <li class="list-group-item">Housewares/furniture/appliances/household linens</li>
+            <li class="list-group-item">Dishes</li>
+            <li class="list-group-item">Food containers</li>
+            <li class="list-group-item">Loose pieces of glass</li>
+            <li class="list-group-item">Broken picture frames (missing glass, backing, etc.)</li>
+            <li class="list-group-item">Broken glass/ceramics</li>
+            <li class="list-group-item">Computer hardware/software</li>
+            <li class="list-group-item">VHS tapes, cassette tapes, CDs, or their cases</li>
+            <li class="list-group-item">Printers or other electronics</li>
+            <li class="list-group-item">Hanging files, file folders or binders over 2" wide</li>
+            <li class="list-group-item">Toys</li>
+            <li class="list-group-item">Knick-knacks (figurines, ornaments, baskets)</li>
+            <li class="list-group-item">House paint</li>
+            <li class="list-group-item">Toxic or unidentifiable substances</li>
+            <li class="list-group-item">Junk mail</li>
+            <li class="list-group-item">Most magazines except vintage, National Geographic, and art magazines - please ask</li>
+            <li class="list-group-item">Paper towel/toilet paper rolls, egg cartons, styrofoam</li>
+            <li class="list-group-item">Architectural samples</li>
+            <li class="list-group-item">Fabric scraps under 1/2 yard (sorry no fabric samples, cut up clothing, household linens or unfinished sewing projects</li>
+        </ul>
+        <p>We will happily provide suggestions for other places to take items that we cannot accept. We appreciate your contribution, and we hope you can find some useful and inspiring materials when you visit our store.</p>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container-lg">
+            <div class="row">
+                <img src="../img/shed-logo.png" class="footer-logo">
+                <p>The WasteShed &copy; 2021</p>
+            </div>
+            <div class="contact-info">
+                <img src="../img/instagram-icon.svg">
+                <img src="../img/twitter-icon.svg">
+                <img src="../img/facebook-icon.svg">
+                <div>
+                    <h6>Evanston</h6>
+                    <p><em>Open </em>11am - 6pm, <em>Closed </em>Sundays & Tuesdays</p>
+                    <p>1245 Hartrey Ave, Evanston IL 60202</p>
+                </div>
+                <div>
+                    <h6>Chicago</h6>
+                    <p><em>Open </em>11am - 6pm, <em>Closed </em>Mondays</p>
+                    <p>2842 W Chicago Ave, Chicago IL 60622</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
