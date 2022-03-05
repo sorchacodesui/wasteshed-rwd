@@ -1,12 +1,183 @@
-h1 {
-    color: red;
+:root {
+	/* colors */
+	--med-blue: #2c6f7b;
+	--black: #000000;
+	--light-blue: #ebf3ff;
+	--light-pink: #f39292;
+	--teal-green: #59c0a8;
+	--dark-blue: #2a4044;
+	--dark-grey: #434343;
+	--slate-blue: #7f99c0;
+	--light-grey: #faf6f6;
+	--transp-blue: rgba(205, 225, 255, 0.4);
+	--dark-blue: #2356a2;
+	--peachy: #f1dbc6;
+	--orange: #e77131;
+    --dark-red: #BB2626;
+    --indigo-blue: #456CA8; 
 }
 .bannerImg {
-    width: 377px;
-    height: 405px;
-    align-items: right;
+	width: 377px;
+	height: 405px;
+	padding: none;
 }
-h1 .heroText {
-    color: #2356A2;
+.homeBody {
+	background-color: var(--peachy);
+	background-image: url(../images/herobkgd.jpg);
+}
+body {
+	background-color: var(--peachy) !important; 
+}
+
+/*Need to target this in way that works, it won't read the class, but not all h1 tags need to be blue*/
+h1 {
+	color: var(--dark-blue);
+	font-family: "Roboto Mono", monospace;
+}
+.home-subheading {
+	font-family: "Roboto", sans-serif;
+}
+/*Trying to make the Donate in hero not be blue-- THE BELOW DID NOT WORK */
+.heroLink {
+	color: var(--dark-blue);
+}
+.heroBtn {
+	width: 170px;
+	height: auto;
+	font-family: "Roboto Mono", monospace;
+	border-radius: none;
+	background-color: var(--orange) !important;
+	border-color: var(--orange);
+    color: white;
+}
+.hpNav {
+	font-family: "Roboto Mono", monospace;
+	color: var(--dark-blue) !important;
+    font-weight: 400;
+}
+
+ul {
+    list-style-image: url("/wasteshed-rwd/images/star.png");
+    align-content: center;
+    list-style-position: outside;
+}
+hr {
+    border-width: 5px;
+    color: var(--dark-red);
 
 }
+.vector {
+    width: 100%;
+}
+.monoHead {
+    font-family: "Roboto Mono", monospace;
+
+}
+.redParagraph {
+    color: var(--dark-red);
+}
+p {
+    font-family: "Roboto Mono", monospace;
+    color: var(--dark-blue);
+    font-weight: 500;   
+  
+}
+.redLink {
+    color: var(--dark-red) !important;
+}
+.starSection {
+    text-align: center;
+    justify-content: center;
+}
+h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700 !important;
+    color: var(--dark-blue);
+}
+
+.donations {
+    align-items: flex-end; 
+    justify-content: space-between;
+    text-align: center;
+}
+
+.donations img {
+    width: 85%;
+    height: 85%;
+}
+
+.navbar-toggler i {
+    color: var(--dark-blue);
+    font-size: 1.5em
+}
+
+#aboutWaterShed {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    background-image: url(../images/lampost-vector.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    height: 760px;
+}
+
+.buildingImg {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+
+.lampDivider {
+    position: absolute;
+    top: 30%;
+}
+.listHead {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    padding-top: 1em;
+  
+}
+.eventList {
+    padding-top: 5em;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../images/notebook.png);
+    display: flex;
+    height: 1260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding-right: 0%v;
+
+
+}
+.eventContainer {
+    flex-direction: column;
+    padding-top: 10px;
+    width: 500px;
+}
+.upcomingDates {
+    padding-top: 10px;
+}
+#aboutList {
+ padding-right: none;   
+ margin-right: nonev;
+}
+.legs {
+
+    padding: .625em 0; text-align: justify;
+
+}
+.eventHead {
+    text-align: right;
+}
+footer {
+    background-color: var(--indigo-blue);
+    padding-bottom: none;
+}
+.redHat {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+}
+.footerDiv{
+    border: 0.5px solid white;}
