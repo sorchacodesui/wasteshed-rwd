@@ -1,3 +1,12 @@
 h1 {
     color: red;
 }
+.bannerImg {
+    width: 377px;
+    height: 405px;
+    align-items: right;
+}
+h1 .heroText {
+    color: #2356A2;
+
+}
