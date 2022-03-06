@@ -35,19 +35,36 @@
         </div>
     </nav>
     <section id="wishlist-hero">
-        <div class="breadcrumbs">
-            <img src="../img/reverse-arrow-slate-thin.svg">
-            <p class="d-inline"><a href="donations.html">Donate</a> / </p>
-            <p class="d-inline">Wishlists</p>
+        <div class="container-xl py-5">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <div class="breadcrumbs">
+                        <img src="../img/reverse-arrow-slate-thin.svg" class="pe-1">
+                        <a href="donations.html" class="breadcrumb d-inline">Donate</a>
+                        <p class="d-inline"> / </p>
+                        <a href="#" class="breadcrumb breadcrumb-active d-inline">Wishlists</a>
+                        <!-- <p class="d-inline"><a href="donations.html" class="breadcrumb">Donate</a> / </p>
+                        <p class="d-inline"><a class="breadcrumb breadcrumb-active">Wishlist</a></p> -->
+                    </div>
+                    <h1 class="mt-4">Wishlists</h1>
+                    <p class="hero-subheading mt-3">Pick or View Wishlists From Schools in Chicago</p>
+                    <p class="hero-blurb mt-3">
+                        Teachers spend up to $750  their own money to purchase school supplies according to a recent study.
+                    </p>
+                    <p class="hero-blurb">
+                        By selecting a Wishlist to fulfill, we can give teachers the helping hands they need!  
+                    </p>
+                </div>
+                <div class="col-6 text-end">
+                    <img src="../img/school-red-flag.png" id="wishlist-hero-img">
+                </div>
+            </div>
         </div>
-        <h1>Wishlists</h1>
-        <p class="hero-subheading">Pick or View Wishlists From Schools in Chicago</p>
-        <p class="hero-blurb">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum harum, porro vel molestiae sit consequatur et sunt, ut, assumenda non eligendi consequuntur quia dolores atque ullam. Ad porro perspiciatis voluptatem?</p>
     </section>
     <section id="wishlists-all">
-        <div class="container-lg">
+        <div class="container-lg wishlists-container">
             <div class="row wislist-progress">
-                <ol class="wishlist-steps">
+                <ol class="wishlist-steps mt-4">
                     <li class="wishlist-step-item active">Wishlist</li>
                     <li class="wishlist-step-item">Itemize</li>
                     <li class="wishlist-step-item">Schedule</li>
@@ -67,7 +84,7 @@
                 </div>
 
             </div>
-            <h2>Schools</h2>
+            <h3>Schools</h3>
             <div class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Newest

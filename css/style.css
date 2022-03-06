@@ -26,7 +26,7 @@ body {
 }
 /* navbar styles */
 nav {
-    background-color: var(--light-grey);
+    background-color: var(--med-beige);
 }
 .nav-item {
     color: var(--slate);
@@ -94,7 +94,7 @@ p {
     font-family: 'Roboto Mono', monospace;
     font-size: .8rem;
 }
-#hero-img {
+#donations-hero-img {
     width: 100%;
 }
 
@@ -178,9 +178,23 @@ footer {
     font-weight: 500;
 }
 
+/* Wishlist page */
+#wishlist-hero {
+    background-color: var(--light-beige);
+}
+#wishlist-hero-img {
+    border: 1px solid blue;
+}
+#wishlists-all {
+    background-color: var(--light-beige);
+}
+.wishlists-container {
+    border: 1px solid blue;
+    background-color: var(--white);
+}
+
 /* wishlist steps */
 .wishlist-steps {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     counter-reset: item;
@@ -193,19 +207,34 @@ footer {
 .wishlist-steps li:before {
     margin-right: 10px;
     content: counter(item);
-    background-color: red;
+    background-color: var(--white);
+    border: 1px solid var(--slate);
     border-radius: 100%;
-    color: white;
-    width: 1.5em;
+    color: var(--slate);
+    width: 1.6em;
     text-align: center;
     display: inline-block;
 }
-.wishlist-step-item {
-    border: 1px solid blue;
+.wishlist-steps li.active:before {
+    background-color: var(--slate);
+    border: 1px solid var(--slate);
+    color: var(--white);
 }
-
+.wishlist-step-item {
+    color: var(--slate);
+}
+.wishlist-step-item.active {
+    font-weight: 700;
+}
 /* Wishlist links section (on wishlist pages) */
 .wishlist-link {
     display: flex;
 }
-
+.breadcrumb {
+    text-decoration: none;
+    color: var(--slate);
+    font-size: .8rem;
+}
+.breadcrumb-active {
+    font-weight: 600;
+}
