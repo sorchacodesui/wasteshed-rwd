@@ -1,7 +1,8 @@
 :root {
     /* colors */
-    --med-blue: #2C6F7B;
+    --teal-blue: #2C6F7B;
     --black: #000000;
+    --white: #ffffff;
     --light-blue: #EBF3FF;
     --light-pink: #F39292;
     --teal-green: #59C0A8;
@@ -9,52 +10,88 @@
     --dark-grey: #434343;
     --slate-blue: #7F99C0;
     --light-grey: #FAF6F6;
-    --transp-blue: rgba(205, 225, 255, 0.4);
+    --transp-blue: rgba(0, 0, 0, 0.4);
+    /* new colors */
+    --med-beige: #F1DBC6;
+    --light-beige: #FFF0E1;
+    --med-blue: #2356A2;
+    --med-blue-transp: rgba(235,243,255, 0.1);
+    --slate: #475D7D;
+    --brick-red: #BB2626;
+    --yellow: #FFC368;
 }
 body {
      font-family: 'Red Hat Display', sans-serif;
+     font-size: 16px;
 }
 /* navbar styles */
 nav {
     background-color: var(--light-grey);
 }
 .nav-item {
-    color: var(--black);
+    color: var(--slate);
     text-transform: uppercase;
     font-size: .85rem;
 }
 .nav-link {
-    color: var(--black) !important;
+    color: var(--slate);
 }
 .nav-link.active {
-    color: var(--black) !important;
+    color: var(--brick-red) !important;
     text-decoration: underline;
     font-weight: 700;
+}
+/* typography styles */
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
+    font-weight: 300;
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--med-blue);
+}
+h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--white);
+}
+p {
+    color: var(--slate);
+    font-size: 1rem;
+}
+.hero-subheading {
+    font-family: 'Roboto Monospace', monospace;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--brick-red);
+}
+.subheading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color: var(--brick-red);
 }
 
 /* hero styles */
 #hero {
     background-color: var(--light-grey);
 }
-h1 {
-    font-weight: 800;
-    font-size: 3rem;
-}
-h2 {
-    font-weight: 800;
-    font-size: 2.2rem;
-}
-.hero-subheading {
-    font-size: 1.6rem;
-}
-.hero-blurb {
-    color: var(--med-blue);
-    font-size: .9rem;
-}
 .hero-btn a {
     color: var(--med-blue);
     font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
     font-size: .8rem;
 }
 #hero-img {
@@ -65,26 +102,16 @@ h2 {
 #support {
     border: 1px solid red;
 }
-#support .subheading {
-    color: var(--dark-grey);
-    font-size: 1.5rem;
-    font-weight: 700;
-}
 .card-heading {
     display: flex;
     align-items: center;
 }
-#support .card-heading h3 {
+#support .card-heading h4 {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 #support .card {
     border: none;
-}
-#support .card-text {
-    color: var(--med-blue);
 }
 
 /* accept styles */
@@ -94,41 +121,31 @@ h2 {
 #accept .card {
     border: none;
 }
-#accept .card-text {
-    color: var(--med-blue);
-}
-#accept h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+
 
 /* not accept styles */
 #not-accept {
     border: 1px solid green;
-}
-#not-accept .subheading {
-    color: var(--light-pink);
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 .list-group {
     padding-left: 0;
 }
 .list-group-item {
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 500;
+    color: var(--slate);
     padding-left: 0;
     padding-right: 5rem;
 }
 #not-accept .disclaimer {
-    color: var(--teal-green);
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--brick-red);
+    font-size: 18px;
 }
 /* footer styles */
 footer {
-    background-color: var(--light-blue);
+    background-color: var(--slate);
 }
 .footer-logo {
     width: 100px;
@@ -140,11 +157,16 @@ footer {
 }
 .copyright {
     font-size: .85rem;
+    color: var(--white);
 }
 .contact {
     display: flex;
     align-items: center;
-    font-size: .85rem;
+}
+.contact p {
+    color: var(--white);
+    font-size: .8rem;
+
 }
 .contact-social {
     padding-right: 3rem;
@@ -156,7 +178,34 @@ footer {
     font-weight: 500;
 }
 
+/* wishlist steps */
+.wishlist-steps {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    counter-reset: item;
+    list-style: none;
+}
+.wishlist-steps li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+.wishlist-steps li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background-color: red;
+    border-radius: 100%;
+    color: white;
+    width: 1.5em;
+    text-align: center;
+    display: inline-block;
+}
+.wishlist-step-item {
+    border: 1px solid blue;
+}
+
 /* Wishlist links section (on wishlist pages) */
 .wishlist-link {
     display: flex;
 }
+
