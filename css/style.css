@@ -15,7 +15,7 @@
     --med-beige: #F1DBC6;
     --light-beige: #FFF0E1;
     --med-blue: #2356A2;
-    --med-blue-transp: rgba(235,243,255, 0.1);
+    --med-blue-transp: rgba(35,86,162, 0.1);
     --slate: #475D7D;
     --brick-red: #BB2626;
     --yellow: #FFC368;
@@ -185,14 +185,24 @@ footer {
 #wishlist-hero-img {
     border: 1px solid blue;
 }
-#wishlists-all {
+#wishlists {
     background-color: var(--light-beige);
 }
 .wishlists-container {
-    border: 1px solid blue;
     background-color: var(--white);
+    border-radius: 10px;
 }
-
+#wishlists .card {
+    background-color: var(--med-blue-transp);
+    border: none;
+    border-radius: 14px;
+}
+.dropdown a {
+    background-color: var(--med-blue-transp);
+}
+.card-text p.date {
+    font-weight: 700;
+}
 /* wishlist steps */
 .wishlist-steps {
     display: flex;
@@ -227,6 +237,9 @@ footer {
     font-weight: 700;
 }
 /* Wishlist links section (on wishlist pages) */
+#wishlist-links {
+    background-color: var(--light-beige);
+}
 .wishlist-link {
     display: flex;
 }
