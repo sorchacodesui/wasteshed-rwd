@@ -46,6 +46,7 @@ h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 42px;
     font-weight: 300;
+    color: var(--med-blue);
 }
 h2 {
     font-family: 'Roboto Mono', monospace;
@@ -122,9 +123,6 @@ p {
 }
 
 /* support styles */
-#support {
-    border: 1px solid red;
-}
 .card-heading {
     display: flex;
     align-items: center;
@@ -138,18 +136,11 @@ p {
 }
 
 /* accept styles */
-#accept {
-    border: 1px solid blue;
-}
 #accept .card {
     border: none;
 }
 
-
 /* not accept styles */
-#not-accept {
-    border: 1px solid green;
-}
 .list-group {
     padding-left: 0;
 }
@@ -354,3 +345,18 @@ footer {
       width: 80%;
     }
   }
+
+/*itemize page styles */
+  .continue-btn {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      color: var(--brick-red);
+  }
+.itemize-heading {
+    color: var(--slate);
+}
+.form-check-input {
+    border: 2px solid var(--slate)
+}
