@@ -347,16 +347,24 @@ footer {
   }
 
 /*itemize page styles */
-  .continue-btn {
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-decoration: underline;
-      text-decoration-thickness: 3px;
-      color: var(--brick-red);
-  }
+.continue-btn-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: var(--brick-red);
+}
 .itemize-heading {
     color: var(--slate);
 }
 .form-check-input {
     border: 2px solid var(--slate)
+}
+.form-check label {
+    color: var(--slate);
+    font-family: 'Red Hat Display'
+}
+.list-category {
+    background-color: var(--med-blue-transp);
+    border-radius: 14px;
 }
