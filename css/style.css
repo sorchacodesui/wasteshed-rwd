@@ -76,7 +76,7 @@ p {
     font-size: 1rem;
 }
 .hero-subheading {
-    font-family: 'Roboto Monospace', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     font-weight: 300;
     color: var(--brick-red);
@@ -89,24 +89,22 @@ p {
 
 /* hero styles */
 #hero {
-    background-color: var(--light-grey);
+    background-color: var(--light-beige);
 }
 .hero-btn a {
     color: var(--med-blue);
     font-family: 'Roboto Mono', monospace;
     font-size: .8rem;
 }
-#donations-hero-img {
-    width: 100%;
-}
-#wishlist-hero-img {
-    max-width: 100%;
-}
 .hero-content {
     justify-content: space-between;
 }
 .hero-img {
     text-align: right;
+}
+/* must keep #hero-img as well as class for small screen image sizing */
+#hero-img {
+    max-width: 100%;
 }
 @media only screen and (max-width: 1024px) {
     .hero-content {
@@ -119,44 +117,98 @@ p {
         text-align: center;
         order: -1;
         padding-bottom: 2rem;
-    }
+        }
+}
+
+/* red curve line */
+#curve-line {
+    background-color: var(--light-beige);
+}
+#curve-line img {
+    width: 100vw;
+    max-width: 100%;
+
 }
 
 /* support styles */
+#support {
+    background-color: var(--light-beige);
+}
+#support h2 {
+    color: var(--med-blue);
+}
 .card-heading {
     display: flex;
     align-items: center;
 }
-#support .card-heading h4 {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-}
-#support .card {
+#support .card, #accept .card {
     border: none;
+    background-color: var(--light-beige);
+}
+#support .card-text a {
+    color: var(--slate);
 }
 
 /* accept styles */
-#accept .card {
-    border: none;
+#accept {
+    background-color: var(--light-beige);
+}
+#accept h2 {
+    color: var(--brick-red);
+}
+@media only screen and (max-width: 1140px) {
+    #support .card {
+        width: 80%;
+        padding: 3rem 0 3rem 3rem;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #support .card {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    #support .card {
+        width: 80%;
+    }
 }
 
 /* not accept styles */
+#not-accept {
+    background-color: var(--light-beige);
+}
+#not-accept h2 {
+    color: var(--med-blue);
+}
 .list-group {
     padding-left: 0;
+    background-color: inherit;
 }
 .list-group-item {
     border: none;
-    font-size: 1.125rem;
     font-weight: 500;
     color: var(--slate);
     padding-left: 0;
     padding-right: 5rem;
+    background-color: var(--light-beige);
 }
-#not-accept .disclaimer {
+@media only screen and (max-width: 720px) {
+    .list-group li {
+        width: 100% !important;
+        padding-left: 1.5rem;
+    }
+}
+.disclaimer {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.disclaimer-text {
     font-family: 'Roboto Mono', monospace;
     color: var(--brick-red);
     font-size: 18px;
 }
+
 /* footer styles */
 footer {
     background-color: var(--slate);
@@ -190,7 +242,7 @@ footer {
 .street-address {
     font-weight: 500;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
     .contact {
         flex-direction: column-reverse;
     }
@@ -225,13 +277,14 @@ footer {
 /* wishlist steps */
 .wishlist-steps {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     counter-reset: item;
     list-style: none;
 }
 .wishlist-steps li {
     counter-increment: item;
     margin-bottom: 5px;
+    padding: 1rem;
 }
 .wishlist-steps li:before {
     margin-right: 10px;
@@ -254,6 +307,12 @@ footer {
 }
 .wishlist-step-item.active {
     font-weight: 700;
+}
+.step-line {
+    content: " ";
+    width: 10%;
+    border-bottom: 1.5px solid var(--slate);
+    align-self: center;
 }
 .search-bar label {
     color: var(--slate);
@@ -290,7 +349,7 @@ footer {
     max-width: 75%;
     height: 75%;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 540px) {
     #paypal-red-dollar {
         max-width: 60%;
         height: 60%;
@@ -367,4 +426,23 @@ footer {
 .list-category {
     background-color: var(--med-blue-transp);
     border-radius: 14px;
+}
+.more-events {
+    color: var(--brick-red);
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.total-donations {
+    text-align: center;
+    /* margin: 0 auto; */
+}
+.conf-total {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+#total-number {
+    font-size: 4rem;
+    font-weight: 700;
 }
