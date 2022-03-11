@@ -26,7 +26,10 @@
 	background-image: url(../images/herobkgd.jpg);
 }
 body {
-	background-color: var(--peachy) !important; 
+	background-color: var(--peachy) !important;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /*Need to target this in way that works, it won't read the class, but not all h1 tags need to be blue*/
@@ -101,6 +104,11 @@ h2 {
     text-align: center;
 }
 
+.img {
+    width: auto;
+    height: auto;
+}
+
 .donations img {
     width: 85%;
     height: 85%;
@@ -115,10 +123,10 @@ h2 {
     display: flex;
     flex-direction: column;
     padding-left: 0;
-    background-image: url(../images/lampost-vector.png);
-    background-position: 50% 100%;
+    /* background-image: url(../images/lampost-vector.png);
     background-repeat: no-repeat;
-    height: 760px;
+    height: auto; */
+    position: relative;
 }
 
 .buildingImg {
@@ -134,22 +142,24 @@ h2 {
 .listHead {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    padding-top: 1em;
+    padding-top: 30px;
   
 }
 .eventList {
     padding-top: 5em;
     flex-direction: column;
-    text-align: center;
     background-image: url(../images/notebook.png);
     display: flex;
     height: 1260px;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    padding-right: 0%v;
-
-
+    padding-right: 0%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.eventList h1 {
+    text-align: center;
 }
 .eventContainer {
     flex-direction: column;
@@ -161,12 +171,13 @@ h2 {
 }
 #aboutList {
  padding-right: none;   
- margin-right: nonev;
+ margin-right: none;
+ width: 55%;
 }
 .legs {
-
-    padding: .625em 0; text-align: justify;
-
+    position: absolute;
+    left: 26%;
+    z-index: -1;
 }
 .eventHead {
     text-align: right;
@@ -180,4 +191,32 @@ footer {
     color: white;
 }
 .footerDiv{
-    border: 0.5px solid white;}
+    border: 0.5px solid white;
+}
+.aboutHeading {
+   padding-top:20px;
+   padding-left: 1.5em;
+   color: var(--dark-red);
+   font-size: 25px;
+   width: 50%;
+   text-align: center;
+}
+.heroSection {
+    display: flex;
+}
+.lampPostVector {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 42%;
+    left: 25%;
+}
+.blueLink {
+    color: var(--dark-blue) !important;
+    text-decoration: none;
+}
+.blueLink:hover {
+    color: var(--dark red);
+}
