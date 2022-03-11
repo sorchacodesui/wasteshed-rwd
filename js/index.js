@@ -8,7 +8,6 @@ $(function () {
     $('#viaPaypal .hiddenText').fadeOut(300);
   }
   );
-
   $('#donateMaterials').hover(function() {
     $('#donateMaterials .hiddenText').fadeIn(300);
   }, function() {
@@ -16,14 +15,6 @@ $(function () {
   }
   );
 });
-
-// on itemize page - test function //
-$(function() {
-  $("#test").on('click', function () {
-    $('#testLink').css("color", "red")
-  })
-});
-
 // on itemize.html page *//
 // to prevent continue button until user selects at least one item to donate to the wishlist //
 $(function () {
