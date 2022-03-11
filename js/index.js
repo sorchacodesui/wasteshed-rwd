@@ -18,7 +18,7 @@ $(function () {
 // on itemize.html page *//
 // to prevent continue button until user selects at least one item to donate to the wishlist //
 $(function () {
-    $('#formContinue').hide();
+  $('#formContinue').hide();
   $('input').on('click', function () {
     $('#formContinue').fadeIn(300);
   })
