@@ -1,0 +1,448 @@
+:root {
+    /* colors */
+    --teal-blue: #2C6F7B;
+    --black: #000000;
+    --white: #ffffff;
+    --light-blue: #EBF3FF;
+    --light-pink: #F39292;
+    --teal-green: #59C0A8;
+    --dark-blue: #2A4044;
+    --dark-grey: #434343;
+    --slate-blue: #7F99C0;
+    --light-grey: #FAF6F6;
+    --transp-blue: rgba(0, 0, 0, 0.4);
+    /* new colors */
+    --med-beige: #F1DBC6;
+    --light-beige: #FFF0E1;
+    --med-blue: #2356A2;
+    --med-blue-transp: rgba(35,86,162, 0.1);
+    --slate: #475D7D;
+    --brick-red: #BB2626;
+    --yellow: #FFC368;
+}
+body {
+     font-family: 'Red Hat Display', sans-serif;
+     font-size: 16px;
+}
+/* navbar styles */
+nav {
+    background-color: var(--med-beige);
+}
+.nav-item {
+    color: var(--slate);
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+.nav-link {
+    color: var(--slate);
+}
+.nav-link.active {
+    color: var(--brick-red) !important;
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* typography styles */
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
+    font-weight: 300;
+    color: var(--med-blue);
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2.125rem;
+    font-weight: 700;
+    color: var(--slate);
+}
+h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--med-blue);
+}
+h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--white);
+}
+p {
+    color: var(--slate);
+    font-size: 1rem;
+}
+.hero-subheading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--brick-red);
+}
+.subheading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color: var(--brick-red);
+}
+
+/* hero styles */
+#hero {
+    background-color: var(--light-beige);
+}
+.hero-btn a {
+    color: var(--med-blue);
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+}
+.hero-content {
+    justify-content: space-between;
+}
+.hero-img {
+    text-align: right;
+}
+/* must keep #hero-img as well as class for small screen image sizing */
+#hero-img {
+    max-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+    .hero-content {
+        justify-content: center !important;
+    }
+    .hero-body {
+        padding: 0 2rem;
+    }
+    .hero-img {
+        text-align: center;
+        order: -1;
+        padding-bottom: 2rem;
+        }
+}
+
+/* red curve line */
+#curve-line {
+    background-color: var(--light-beige);
+}
+#curve-line img {
+    width: 100vw;
+    max-width: 100%;
+
+}
+
+/* support styles */
+#support {
+    background-color: var(--light-beige);
+}
+#support h2 {
+    color: var(--med-blue);
+}
+.card-heading {
+    display: flex;
+    align-items: center;
+}
+#support .card, #accept .card {
+    border: none;
+    background-color: var(--light-beige);
+}
+#support .card-text a {
+    color: var(--slate);
+}
+
+/* accept styles */
+#accept {
+    background-color: var(--light-beige);
+}
+#accept h2 {
+    color: var(--brick-red);
+}
+@media only screen and (max-width: 1140px) {
+    #support .card {
+        width: 80%;
+        padding: 3rem 0 3rem 3rem;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #support .card {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    #support .card {
+        width: 80%;
+    }
+}
+
+/* not accept styles */
+#not-accept {
+    background-color: var(--light-beige);
+}
+#not-accept h2 {
+    color: var(--med-blue);
+}
+.list-group {
+    padding-left: 0;
+    background-color: inherit;
+}
+.list-group-item {
+    border: none;
+    font-weight: 500;
+    color: var(--slate);
+    padding-left: 0;
+    padding-right: 5rem;
+    background-color: var(--light-beige);
+}
+@media only screen and (max-width: 720px) {
+    .list-group li {
+        width: 100% !important;
+        padding-left: 1.5rem;
+    }
+}
+.disclaimer {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.disclaimer-text {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--brick-red);
+    font-size: 18px;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--slate);
+}
+.footer-logo {
+    width: 100px;
+}
+.footer-credit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copyright {
+    font-size: .85rem;
+    color: var(--white);
+}
+.contact {
+    display: flex;
+    align-items: center;
+}
+.contact p {
+    color: var(--white);
+    font-size: .8rem;
+}
+.contact-social {
+    padding-right: 3rem;
+}
+.phone-number, .city {
+    font-weight: 700;
+}
+.street-address {
+    font-weight: 500;
+}
+@media only screen and (max-width: 720px) {
+    .contact {
+        flex-direction: column-reverse;
+    }
+    .footer-credit {
+        align-items: center;
+    }
+}
+
+/* Wishlist page */
+#wishlist-hero {
+    background-color: var(--light-beige);
+}
+#wishlists {
+    background-color: var(--light-beige);
+}
+.wishlists-container {
+    background-color: var(--white);
+    border-radius: 10px;
+}
+#wishlists .card {
+    background-color: var(--med-blue-transp);
+    border: none;
+    border-radius: 14px;
+}
+.dropdown button {
+    background-color: var(--med-blue-transp);
+    color: var(--slate);
+}
+.card-text p.date {
+    font-weight: 700;
+}
+/* wishlist steps */
+.wishlist-steps {
+    display: flex;
+    justify-content: center;
+    counter-reset: item;
+    list-style: none;
+}
+.wishlist-steps li {
+    counter-increment: item;
+    margin-bottom: 5px;
+    padding: 1rem;
+}
+.wishlist-steps li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background-color: var(--white);
+    border: 1px solid var(--slate);
+    border-radius: 100%;
+    color: var(--slate);
+    width: 1.6em;
+    text-align: center;
+    display: inline-block;
+}
+.wishlist-steps li.active:before {
+    background-color: var(--slate);
+    border: 1px solid var(--slate);
+    color: var(--white);
+}
+.wishlist-step-item {
+    color: var(--slate);
+}
+.wishlist-step-item.active {
+    font-weight: 700;
+}
+.step-line {
+    content: " ";
+    width: 10%;
+    border-bottom: 1.5px solid var(--slate);
+    align-self: center;
+}
+.search-bar label {
+    color: var(--slate);
+    font-weight: 700;
+}
+.search-bar input {
+    border-radius: 14px;
+    border: 1px solid var(--med-blue-transp);
+    background-color:#FAFAFA;
+    height: 3rem;
+}
+.view-more button {
+    color: var(--slate);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+}
+/* Wishlist links section (on wishlist pages) */
+#wishlist-links {
+    background-color: var(--light-beige);
+    padding-bottom: 2rem;
+}
+.wishlist-link {
+    display: flex;
+    align-items: center;
+}
+/* wishlist link images */
+#paypal-red-dollar {
+   max-width: 75%;
+   height: 75%;
+}
+#calendar-red-star {
+    max-width: 75%;
+    height: 75%;
+}
+@media only screen and (max-width: 540px) {
+    #paypal-red-dollar {
+        max-width: 60%;
+        height: 60%;
+     }
+     #calendar-red-star {
+         max-width: 50%;
+         height: 50%;
+     }
+}
+.wishlist-link a {
+    color: var(--slate);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+.wishlist-link a#accept-link {
+    color: var(--brick-red);
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: .8rem;
+}
+.breadcrumb {
+    text-decoration: none;
+    color: var(--slate);
+    font-size: .8rem;
+}
+.breadcrumb-active {
+    font-weight: 600;
+}
+
+/* progressbar styles */
+.progressbar {
+    background-color: var(--med-blue-transp);
+    border-radius: 14px;
+    border: 3px solid var(--med-blue);
+  }
+  .progressbar > .progressbar-blue {
+    background-color: var(--med-blue);
+    width: 40%;
+    height: 16px;
+    border-radius: 14px;
+    animation: loadBar 4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes loadBar {
+    from {
+      width: 60%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+
+/*itemize page styles */
+.continue-btn-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: var(--brick-red);
+}
+.itemize-heading {
+    color: var(--slate);
+}
+.form-check-input {
+    border: 2px solid var(--slate)
+}
+.form-check label {
+    color: var(--slate);
+    font-family: 'Red Hat Display'
+}
+.list-category {
+    background-color: var(--med-blue-transp);
+    border-radius: 14px;
+}
+.more-events {
+    color: var(--brick-red);
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.total-donations {
+    text-align: center;
+    /* margin: 0 auto; */
+}
+.conf-total {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+#total-number {
+    font-size: 4rem;
+    font-weight: 700;
+}
