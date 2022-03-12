@@ -79,7 +79,7 @@ h1 {
 }
 /* who is wasteshed bullets*/ 
 ul {
-    list-style-image: url("/wasteshed-rwd/images/star.png");
+    list-style-image: url("../images/star.png");
     align-content: center;
     list-style-position: outside;
 }
