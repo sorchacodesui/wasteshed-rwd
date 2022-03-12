@@ -16,108 +16,130 @@
     --dark-red: #BB2626;
     --indigo-blue: #456CA8; 
 }
-.bannerImg {
+/* .bannerImg {
 	width: 377px;
 	height: 405px;
 	padding: none;
-}
-.homeBody {
+} */
+/* .homeBody {
 	background-color: var(--peachy);
 	background-image: url(../images/herobkgd.jpg);
+} */
+
+/* navigation styles*/
+
+nav {
+    background-color: var(--med-beige);
 }
+.nav-item {
+    color: var(--slate);
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+.nav-link {
+    color: var(--slate);
+}
+.nav-link.active {
+    color: var(--brick-red) !important;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
 body {
 	background-color: var(--peachy) !important;
     width: 100vw;
-    max-width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
     overflow-x: hidden;
 }
 
-/*Need to target this in way that works, it won't read the class, but not all h1 tags need to be blue*/
+
 h1 {
 	color: var(--dark-blue);
 	font-family: "Roboto Mono", monospace;
 }
+#home-hero-text {
+    text-align: center;
+    width: 600px;
+}
 .home-subheading {
 	font-family: "Roboto", sans-serif;
 }
-/*Trying to make the Donate in hero not be blue-- THE BELOW DID NOT WORK */
-.heroLink {
-	color: var(--dark-blue);
-}
+
 .heroBtn {
 	width: 170px;
 	height: auto;
 	font-family: "Roboto Mono", monospace;
 	border-radius: none;
-	background-color: var(--orange) !important;
-	border-color: var(--orange);
+	background-color: var(--dark-red) !important;
+	border-color: var(--dark-red);
     color: white;
 }
-.hpNav {
-	font-family: "Roboto Mono", monospace;
-	color: var(--dark-blue) !important;
-    font-weight: 400;
-}
-
+/* who is wasteshed bullets*/ 
 ul {
     list-style-image: url("/wasteshed-rwd/images/star.png");
     align-content: center;
     list-style-position: outside;
 }
+
 hr {
     border-width: 5px;
     color: var(--dark-red);
 
 }
-.vector {
-    width: 100%;
-}
+/* .vector {
+    width: 100%; */
+
 .monoHead {
     font-family: "Roboto Mono", monospace;
 
 }
-.redParagraph {
-    color: var(--dark-red);
+/*event link*/
+.redLink {
+    color: var(--dark-red) !important;
 }
+
+
 p {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Red Hat Display', sans-serif;
     color: var(--dark-blue);
     font-weight: 500;   
   
 }
-.redLink {
-    color: var(--dark-red) !important;
-}
+/*make a donation*/
 .starSection {
     text-align: center;
     justify-content: center;
 }
+.waysToGive {
+    align-items: flex-end; 
+    justify-content: space-between;
+    text-align: center;
+}
+
 h2 {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700 !important;
     color: var(--dark-blue);
 }
 
-.donations {
-    align-items: flex-end; 
-    justify-content: space-between;
-    text-align: center;
-}
 
 .img {
     width: auto;
     height: auto;
 }
 
-.donations img {
+/* .waysToGive img {
     width: 85%;
     height: 85%;
-}
+} */
 
-.navbar-toggler i {
+/* .navbar-toggler i {
     color: var(--dark-blue);
     font-size: 1.5em
-}
+} */
 
 #aboutWaterShed {
     display: flex;
@@ -142,15 +164,22 @@ h2 {
 .listHead {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    padding-top: 30px;
-  
+    font-size: 25px;
+    display: inline;
 }
+.classContributions {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+}
+
 .eventList {
     padding-top: 5em;
     flex-direction: column;
     background-image: url(../images/notebook.png);
+    background-repeat: none;
+    background-position: bottom;
     display: flex;
-    height: 1260px;
+    height: 1319px;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -162,7 +191,6 @@ h2 {
     text-align: center;
 }
 .eventContainer {
-    flex-direction: column;
     padding-top: 10px;
     width: 500px;
 }
@@ -176,13 +204,14 @@ h2 {
 }
 .legs {
     position: absolute;
-    left: 26%;
+    left: 20%;
     z-index: -1;
 }
 .eventHead {
     text-align: right;
 }
 footer {
+    color: white;
     background-color: var(--indigo-blue);
     padding-bottom: none;
 }
@@ -194,16 +223,33 @@ footer {
     border: 0.5px solid white;
 }
 .aboutHeading {
-   padding-top:20px;
+   padding-top:140px;
    padding-left: 1.5em;
    color: var(--dark-red);
-   font-size: 25px;
+   font-size: 30px;
    width: 50%;
    text-align: center;
 }
 .heroSection {
-    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-left: 0px !important;
+    text-align: center;
 }
+#heroBanner {
+    width: 100%;
+    z-index: -1;
+}
+#heroText {
+    z-index: 1;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 .lampPostVector {
     display: block;
     position: absolute;
@@ -220,3 +266,159 @@ footer {
 .blueLink:hover {
     color: var(--dark red);
 }
+
+/* footer styles */
+.footer-logo {
+    width: 100px;
+}
+.footer-credit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copyright {
+    font-size: .85rem;
+    color: var(--white);
+}
+.contact {
+    display: flex;
+    align-items: center;
+}
+.contact p {
+    color: var(--white);
+    font-size: .8rem;
+}
+.contact-social {
+    padding-right: 3rem;
+}
+.phone-number, .city {
+    font-weight: 700;
+}
+.street-address {
+    font-weight: 500;
+}
+h3 {
+    color: var(--dark-blue);
+}
+@media only screen and (max-width: 576px) {
+    .contact {
+        flex-direction: column-reverse;
+    }
+    .footer-credit {
+        align-items: center;
+    }
+    
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    h1 {
+        font-size: 18px !important;
+    }
+    p {
+        font-size: 12px;
+    }
+    #heroBanner {
+        height: auto;
+    }
+    .home-subheading {
+        display: none;
+    }
+    .heroBtn {
+        font-size: 10px;
+        width: auto;
+    }
+    #aboutList {
+        
+        width: 75%;
+        margin-left: 15px;
+    }
+    .donateToday {
+        padding-top: 35px;
+    }
+    .aboutHeading {
+        padding-top: 50px;
+    }
+    .lampPostVector {
+        top: 89%;
+        left: 25%;
+    }
+    #aboutWaterShed {
+        margin-bottom: 25px;
+    }
+    h3 {
+        color: var(--dark-blue);
+        font-size: 15px;
+    }
+    #heroText {
+        top: 45%;
+    }
+    .waysToGive {
+        margin-top: 25px;
+    }
+    .waysToGive img {
+        width: 65%;
+        height: 80%;
+    }
+    .eventList {
+        height: 700px;
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        margin-bottom: 25px;
+    }
+    .eventContainer {
+        width: 50%;
+    }
+
+ }
+
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    h1 {
+        font-size: 18px !important;
+    }
+    .waysToGive img {
+        width: 65%;
+        height: 80%;
+    }
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 18px !important;
+    }
+    #aboutList {
+        
+        width: 75%;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    .waysToGive {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .eventList {
+        height: 600px;
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+        margin-bottom: 25px;
+    }
+    .eventContainer {
+        width: 50%;
+    }
+    .legs{
+        display: none;
+    }
+  }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* // Extra large devices (large desktops) */
+/* // No media query since the extra-large breakpoint has no upper bound on its width */
