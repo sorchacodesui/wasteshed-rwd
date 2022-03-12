@@ -19,39 +19,50 @@
 </head>
 
 <body>
-    <div class="homeBody">
-        <nav class="navbarHome">
-            <div class="container">
-                <a class="navbar-brand" href="/wasteshed-rwd/index.html">
-                    <img src="./images/wasteshed+logo 1.png" alt="">
-                </a>
-            </div>
-        </nav>
-
-        <!--Hero -->
-        <div class="heroSection">
-            <div class="container my-4 mx-5">
-                <div class="row">
-                    <div class="col-lg-6 home-hero-img pt-5 ps-5">
-                        <img src="./images/stickers 2.png" class="d-block mx-lg-auto img-fluid bannerImg"
-                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                    </div>
-                    <div class="col-lg-6 home-hero-text pt-5 ps-5">
-                        <h1 id="heroHeader">Chicago’s #1
-                            Secondhand Art & Supplies Store</h1>
-                        <p class="home-subheading">Materials donations by <span
-                                style="font-weight:bold">appointment</span> only, see the <span
-                                style="font-weight:bold"><i><u><a class="heroLink"
-                                            href="donations.html">Donate</a></u></i></span>
-                            page for details.
-                        </p>
-
-                        <a href="donations.html"><button type="button" class="heroBtn">Donate Now.</button></a>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xxl mt-3 mb-2">
+            <a href="../index.html"><img src="images/wasteshed+logo 1.png"
+                    alt="light blue, white, and green logo of a shed next to text reading 'The WasteShed'"></a>
+            <!-- toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Event</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Volunteer</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Webstore</a></li>
+                    <li class="nav-item pe-3"><a href="donations.html" class="nav-link active">Donate</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg">
+    </nav>
+    <!-- <div class="homeBody"> -->
+    <!--Hero -->
+    <div class="container-fluid heroSection">
+        <img src="./images/hero-banner.jpg" id="heroBanner" />
+
+        <div id="heroText">
+            <h1 id="heroHeader">Chicago’s #1</h1>
+            <h1>Secondhand</h1>
+            <h1 class="pb-4">Art & Supplies Store</h1>
+            <p class="home-subheading pb-5">Materials donations by <span style="font-weight:bold">appointment</span>
+                only, see the <span style="font-weight:bold"><i><u><a class="heroLink"
+                                href="donations.html">Donate</a></u></i></span>
+                page for details.
+            </p>
+
+            <a href="donations.html"><button type="button" class="heroBtn">Donate Now.</button></a>
+
+        </div>
+
+    </div>
+    <!-- </div> -->
+    <!-- <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -83,16 +94,16 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </div>
     <!-- About WasteShed section-->
     <h1 class="aboutHeading">Who is the WasteShed?</h1>
     <div class="container-fluid" id="aboutWaterShed">
         <div class="row pl-0">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <img src="./images/building.png" class="buildingImg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <ul id="aboutList">
                     <li>
                         <h1 class="listHead">Reduce Waste</h1>
@@ -120,12 +131,12 @@
                     <img src="./images/lampost-vector.png" width="75%" />
                 </div>
             </div>
-
-
         </div>
 
-        <!-- Lamp Post Divider -->
-        <!-- <img src="./images/lampost-vector.png" class="vector" alt=""> -->
+    </div>
+
+    <!-- Lamp Post Divider -->
+    <!-- <img src="./images/lampost-vector.png" class="vector" alt=""> -->
 
     </div>
 
@@ -133,7 +144,7 @@
     <!-- Donate Today -->
     <div class="container-md">
         <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4 col-sm-12">
                 <h1 class="monoHead">Donate Today</h1>
                 <p class="redParagraph">Currently Accepting Material Donations by Appointments Only*</p>
                 <p>The WasteShed is 75% self-supporting through sales, but we still depend on grants and donations from
@@ -145,72 +156,73 @@
     <div class="container starSection">
         <div class="row">
             <div class="col-md 12">
-                <img src="./images/star.png">
+                <img id="starDivider" src="./images/star-divider.png">
                 <br></br>
                 <p class="starPar">Make a tax-deductible donation today!</p>
-                <p class="redParagraph"><a href="donations.html" class="redLink">WHAT ITEMS DO WE ACCEPT? &#10137;</p></a>
+                <p class="redParagraph"><a href="donations.html" class="redLink">WHAT ITEMS DO WE ACCEPT? &#10137;</p>
+                </a>
             </div>
         </div>
     </div>
-    <div class="container donations">
+    <div class="container waysToGive">
         <div class="row ">
-            <div class="col-3 col-md-4">
+            <div class="col-lg-3 col-md-12 col-sm-12">
                 <img src="./images/paypalpng 1.png">
                 <h2>Donate Via PayPal &#10137;</h2>
             </div>
-            <div class="col-6 col-md-4">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <img src="./images/school 1.png">
                 <h2><a href="wishlists.html" class="blueLink">Contribute to a Classroom &#10137;</a></h2>
             </div>
-            <div class="col-3 col-md-4">
+            <div class="col-lg-3 col-md-12 col-sm-12">
                 <img src="./images/calander 1.png" href="#">
                 <h2><a href="schedule.html" class="blueLink">Schedule a Dropoff &#10137;</a></h2>
             </div>
-
-
         </div>
     </div>
 
-    <div class="row">
-        <img src="./images/scissors-squiggle.png" width="100vw">
-    </div>
+    <img src="./images/scissors-squiggle.png" width="100%">
+
     <div class="container-fluid">
         <div class="row align-self-center eventSection">
-            <div class="col-5 g-5 ">
+            <div class="col-lg-5 g-5 ">
                 <h1 class="monoHead">Events</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec nascetur aliquet enim viverra elementum
-                    eget massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec nascetur aliquet enim
-                    viverra elementum eget massa. </p>
+                <h3>Join us on VolunTuesdays!</h3>
+                <p>At the WasteShed's monthly volunteer night, we sort materials, organize the space, tackle
+                    larger projects, clean, eat snacks and hang out. Bring a friend, and meet some new
+                    people! </p>
+                <p>New volunteers must fill out our volunteer interest form at thewasteshed.com/volunteer before
+                    volunteering.</p>
+
+                <p>Volunteers must wear masks at all times when not actively eating or drinking and will be asked to
+                    provide proof of vaccination upon arrival</p>
                 <p class="redParagraph"><a href="#" class="redLink">EXPLORE MORE EVENTS →</p></a>
                 <img class="legs" src="./images/leg_maniquin_color 1.png">
             </div>
 
-            <div class="col-7">
-                <ul id="eventList">
-                    <li class="eventList">
-                        <h1 class="container listHead" id="eventHead">Monthly VolunTuesday Events </h1>
-                        <div class="eventContainer">
-                            <p>The WasteShed's monthly volunteer night! We sort materials, organize the space, tackle
-                                larger projects, clean, eat snacks and hang out. Bring a friend, and meet some new
-                                people! </p>
+            <div class="col-lg-7 eventList">
 
-                            <p>New volunteers must fill out our volunteer interest form at thewasteshed.com/volunteer
-                                before volunteering.</p>
 
-                            <p>Volunteers must wear masks at all times when not actively eating or drinking and will be
-                                asked to provide proof of vaccination upon arrival
-                            </p>
-                        </div>
-                        <img src="./images/star.png">
-                        <h2 class="upcomingDates">Upcoming Dates</h2>
-                        <p>April 26, 5pm – 8pm </p>
-                        <p>May 31, 5pm – 8pm </p>
-                        <p>June 28, 5pm – 8pm </p>
-                        <p>July 26, 5pm – 8pm </p>
-                        <p>August 30, 5pm – 8pm </p>
+             
+                <div class="eventContainer">
+                    <h1 class="classContributions" id="eventHead">Contributing to Classrooms</h1>
+                    <p>At the WasteShed we partner with surrounding Chicago schools support teachers in
+                        receiving the much-needed school supplies. </p>
+                    <p><b>How can you make an impact?</b> Begin by selecting a school to support. Each school has a wish
+                        list of supplies they would like— items can range from pencils to easels.</p>
+                    <p>Once you've checked off the items from the list, schedule a time that works best for you to drop
+                        off your items at one of our WasteShed locations.
+                    </p>
+                    <p>After you drop off your donated materials, we'll take it from there and bring the items to the
+                        school you're supporting.</p>
+                    <div style="text-align:center">
+                    <img src="./images/star.png">
+                    </div>
+                </div>
+           
 
-                    </li>
-                </ul>
+
+
 
             </div>
 
@@ -218,28 +230,33 @@
     </div>
     <div class="container-fluid">
 
-        <h1 class="contactHead">Contact</h1>
+        <h1 class="contactHead">Contact Us</h1>
         <div class="row">
-            <div class="col-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec nascetur aliquet enim viverra elementum
-                    eget massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec nascetur aliquet enim
-                    viverra elementum eget massa. </p>
+            <div class="col-lg-5 col-sm-12 pl-5">
+                <p>If you have any questions or would like to volunteer, we'd love to hear from you! Send us a message
+                    and one of our staff members will reach out to you.</p>
 
             </div>
-            <div class="col-6">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-5 col-sm-12 contactForm">
                 <form>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Name">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
                     </div>
+                    <br />
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Email Address">
                     </div>
+                    <br />
                     <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                      </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <br />
                     <p class="redParagraph"><a href="#" class="redLink">SEND NOW &#10137; </p></a>
                 </form>
             </div>
@@ -248,42 +265,37 @@
 
     </div>
     <!-- Footer-->
-    <div class="container-fluid myFooter">
-        <footer class="row row-cols-5 pt-5 mt-5 border-top">
-            <div class="col">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <img src="./images/logofooter.png">
-                <p class="redHat">The WasteShed © 2021</p>
+    <footer id="footer">
+        <div class="container-lg py-3">
+            <div class="row footer-content">
+                <div class="footer-credit col-lg-7 col-md-6 col-sm-12">
+                    <img src="./images/logofooter.png" alt="light blue, green, and white logo of a shed" class="footer-logo">
+                    <p class="copyright">The WasteShed &copy; 2021</p>
+                </div>
+                <div class="contact col-lg-5 col-md-6 col-sm-12">
+                    <div class="contact-social">
+                        <img src="../img/instagram-icon.svg" alt="" class="pe-3">
+                        <img src="../img/twitter-icon.svg" alt="" class="pe-3">
+                        <img src="../img/facebook-icon.svg" alt="">
+                        <p class="phone-number py-3">(773) 666-5997</p>
+                    </div>
+                    <div class="contact-location pt-5 pb-5">
+                        <div>
+                            <h5 class="city">Evanston</h5>
+                            <p class="mb-2"><em>Open </em>11am - 6pm, <em>Closed </em>Sundays & Tuesdays</p>
+                            <p class="street-address">1245 Hartrey Ave, Evanston IL 60202</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5 class="city">Chicago</h5>
+                            <p class="mb-2"><em>Open </em>11am - 6pm, <em>Closed </em>Mondays</p>
+                            <p class="street-address">2842 W Chicago Ave, Chicago IL 60622</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="col">
-
-            </div>
-
-            <div class="col">
-            </div>
-
-            <div class="col">
-
-                <p class="redHat"> (773) 666-5997</p>
-            </div>
-
-            <div class="col">
-                <p class="redHat"><b>Evanston</b></p>
-                <p class="redHat"><i> Open </i> 11am - 6pm, <i> Closed</i> Sundays & Tuesdays</p>
-                <p class="redHat">1245 Hartrey Ave, Evanston IL 60202</p>
-                <hr class="footerDiv">
-                <p class="redHat"><b>Chicago</b></p>
-                <p class="redHat"><i> Open </i> 11am - 6pm, <i> Closed</i> Mondays</p>
-                <p class="redHat">2842 W Chicago Avenue, Chicago IL 60622 </p>
-
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <!-- Boostrap Code -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
